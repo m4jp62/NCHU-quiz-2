@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>小考</title>
+
+    <script>
+
+      $('#selection').mouseover(
+        function(){
+          $('#selection').css('color','red')
+                .css('font-size','36px');
+        }
+      );
+
+    </script>
+
+
+    <!--抱歉我只會用CSS改TAT
+    <style>
+    li:hover{
+      font-size:40px;
+      color:red;
+    }
+    </style>
+    -->
+
+  </head>
+  <body>
+
+
+    <script  type="text/javascript">
+    function a(){
+      document.getElementById("1").innerHTML='HTML5';
+      document.getElementById("2").innerHTML='CSS3';
+      var n= document.createElement("li");
+      li = document.createTextNode('MySQL');
+      n.appendChild(li);
+      document.getElementById("selection").appendChild(n);
+
+
+    }
+    function b(){
+
+    }
+
+    function c(){
+      document.getElementById("me").innerHTML='Web Programming_4104029009';
+    }
+
+
+    </script>
+    <h1 id=me>Web Programming</h1>
+    <hr>
+    <p>Context</p>
+    <ul id=selection>
+      <li id=1>HTML</li>
+      <li id=2>CSS</li>
+      <li>DOM</li>
+      <li>JavaScript</li>
+      <li>JSP</li>
+    </ul>
+      <input type="button" name="bt" value="以JS更改元素內容" onClick="a()">
+      <input type="button" value="以jquery更改CSS" onClick="b()">
+      <input type="button" value="+學號" onClick="c()">
+
+  </body>
+</html>
